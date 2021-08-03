@@ -312,6 +312,15 @@ clyde_start_x = 303+(32-16)
 clyde_start_y = (4*60)+19
 
 
+# Define all the lists used
+all_sprites_list = []
+block_list = []
+monster_list = []
+pacman_collide = []
+wall_list = []
+gate = []
+
+
 # This creates all the walls in room 1
 def setupRoomOne(all_sprites_list):
   # Make the walls. (x_pos, y_pos, width, height)
@@ -375,14 +384,6 @@ def setupGate(all_sprites_list):
   all_sprites_list.add(gate)
   return gate
 
-
-# Define all the lists used
-all_sprites_list = []
-block_list = []
-monster_list = []
-pacman_collide = []
-wall_list = []
-gate = []
 
 def startLists():
   global all_sprites_list, block_list, monster_list, pacman_collide, wall_list, gate
@@ -542,6 +543,7 @@ def startGame():
 
     pygame.display.flip()
     clock.tick(10)
+
 
 def doNext(message, left, all_sprites_list, block_list, monster_list, pacman_collide, wall_list, gate):
   while True:
