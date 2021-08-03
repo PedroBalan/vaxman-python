@@ -1,7 +1,9 @@
 # Pacman in Python with PyGame
+# Author: Pedro Balan (https://github.com/PedroBalan)
+#
 # This code was originally taken from https://github.com/hbokmann/Pacman and adapted according to
 # the Electronic Arts Software Engineering Virtual Experience Program challenge (Task 1)
-
+#
 # The game consists of an adaptation of the PacMan game, called VaxMan, and has the following rules:
 #
 # 1) Vax-Man can kill a ghost if he comes into contact with it (vaccinates it).
